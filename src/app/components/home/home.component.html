@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="promos">
+        <img src="https://www.100plandenegocios.com/wp-content/uploads/2014/07/plan-de-negocios-para-bar.jpg" class="img-fluid img-promo my-2" alt="Responsive image">
+    </div>
+
+    <h4>Más cercanos</h4>
+
+    <div class="bar row" *ngFor="let bar of bares">
+        <a href="#" class="d-flex align-items-center">
+            <img [src]="bar.img" [alt]="bar.nombre" class="col-4">
+            <div class="col-8">
+                <h5 class="my-0">{{bar.nombre}}</h5>
+                <div class="estrellas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star nostar"></i>
+                </div>
+
+            </div>
+
+        </a>
+    </div>
+</div>

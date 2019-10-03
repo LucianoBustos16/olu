@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+$colorPrimario: #8E8EF6
+/** ff4081 **/
+$TextoPrimario: #8798AD
+
+h1
+    color: $colorPrimario
+
+.navbar
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.1)
+    .navbar-nav
+        padding: 0 0
+        .active >
+            .nav-link
+              color: $colorPrimario !important
+            .icon-home
+                box-shadow: 0px 0px 10px $colorPrimario
+        .nav-link
+            color: $TextoPrimario !important
+            display: flex
+            flex-direction: column
+            align-items: center
+            p
+                margin-bottom: 0
+                font-size: 0.75rem
+            i
+                font-size: 20px
+    .icon-home
+        background-image: radial-gradient( circle 1036px at 7.6% 15.9%,  rgba(142,142,246,1) 0%, rgba(255,255,255,1) 100.2% )
+        padding: 14px 12px !important
+        border-radius: 15px
+        transform: rotate(45deg)
+        i
+            color: white
+            transform: rotate(-45deg)
+
+
+.bar
+    margin-bottom: 15px
+    img
+        border-radius: 10px
+    .col-4
+        padding-right: 0
+    .estrellas
+        i
+            color: $colorPrimario
+        .nostar
+            color: rgba($colorPrimario, 0.5)
