@@ -1,9 +1,13 @@
 <div class="container-fluid hero-image">
     <a href="#" class="back"><i class="fas fa-chevron-left"></i></a>
-    <img [src]="bar.avatar" alt="" class="avatar">
+    <a href="#" class="fav"><i class="far fa-heart"></i></a>
+    <!--<img [src]="bar.avatar" alt="" class="avatar">-->
 </div>
 <div class="container my-4 d-flex flex-column">
-    <div class="row bar">
+    <div class="row bar justify-content-center">
+        <div class="avatar">
+            <img [src]="bar.avatar" alt="" class="avatar">
+        </div>
         <div class="col-12 d-flex justify-content-between">
             <p class="h4 nombre-bar">{{bar.nombre}}</p>
             <div class="estrellas d-flex align-items-end flex-column">
@@ -25,6 +29,28 @@
             <a href="#" class="atajo ubicacion"><i class="fas fa-location-arrow"></i><p>Ubicación</p></a>
             <a href="#" class="atajo reservar"><i class="far fa-file-alt"></i><p>Reservar</p></a>
             <a href="#" class="atajo contacto"><i class="fas fa-phone"></i><p>Contacto</p></a>
+        </div>
+    </div>
+
+    <div class="menus my-4">
+        <h6>Menú</h6>
+        <div class="menu row flex-row-reverse my-3">
+            <div class="col-4">
+                <img src="https://images.mediotiempo.com/cm934lmXIC_Z7DHAxk7aVpnV7Zg=/958x596/uploads/media/2019/04/24/cervezas-2.jpg" alt="menu.nombre" class="w-100 w-100 img-radius">
+            </div>
+            <div class="col-8">
+                <p class="nombre-plato my-0">Plato</p>
+                <p class="descipcion-plato my-0">Descripción Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            </div>
+        </div>
+        <div class="menu row flex-row-reverse my-3 ">
+            <div class="col-4">
+                <img src="https://images.mediotiempo.com/cm934lmXIC_Z7DHAxk7aVpnV7Zg=/958x596/uploads/media/2019/04/24/cervezas-2.jpg" alt="menu.nombre" class="w-100 img-radius">
+            </div>
+            <div class="col-8">
+                <p class="nombre-plato my-0">Plato</p>
+                <p class="descipcion-plato my-0">Descripción Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+            </div>
         </div>
     </div>
 
