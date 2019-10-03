@@ -4,6 +4,7 @@ import {CuponesComponent} from './components/cupones/cupones.component';
 import {FavoritosComponent} from './components/favoritos/favoritos.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {ReservasComponent} from './components/reservas/reservas.component';
+import { BarComponent } from './components/bar/bar.component';
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -11,6 +12,7 @@ const APP_ROUTES: Routes = [
     { path: 'favoritos', component: FavoritosComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'reservas', component: ReservasComponent },
+    { path: 'bar/:id', component: BarComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);

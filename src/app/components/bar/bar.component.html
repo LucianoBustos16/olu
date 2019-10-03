@@ -1,1 +1,33 @@
-<p>bar works!</p>
+<div class="container-fluid hero-image">
+    <a href="#" class="back"><i class="fas fa-chevron-left"></i></a>
+        <img [src]="bar.avatar" alt="" class="avatar">
+</div>
+<div class="container my-4 d-flex flex-column">
+    <div class="row bar">
+        <div class="col-12 d-flex justify-content-between">
+                <p class="h4 nombre-bar">{{bar.nombre}}</p>
+                <div class="estrellas d-flex align-items-end flex-column">                        
+                        <div class="estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star nostar"></i>
+                        </div>
+                        <p>{{bar.estrellas}} votos</p>
+                </div>                
+        </div>
+    </div>
+    <p>{{bar.descripcion}}</p>
+    <!--img [src]="bar.img" alt="" class="w-100">-->
+    <div class="row d-flex justify-content-center">
+        <div class="col-10 d-flex justify-content-between atajos py-4">
+            <a href="#" class="atajo"><i class="fas fa-location-arrow"></i><p>Ubicación</p></a>
+            <a href="#" class="atajo"><i class="far fa-file-alt"></i><p>Reservar</p></a>
+            <a href="#" class="atajo"><i class="fas fa-phone"></i><p>Contacto</p></a>
+        </div>
+    </div>
+        
+       
+</div>
+
