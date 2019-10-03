@@ -12,7 +12,6 @@ export class BaresService {
             estrellas: '4',
             casa: 'DC'
           },
-          
     ];
 
     constructor() {
@@ -23,7 +22,7 @@ export class BaresService {
         return this.bares;
     }
 
-    getBar( idx: string){
+    getBar( idx: string) {
       return this.bares[idx];
     }
 }
