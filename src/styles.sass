@@ -1,6 +1,4 @@
-
-    
-    /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
 $colorPrimario: #8E8EF6
 /** ff4081 **/
 $TextoPrimario: #8798AD
@@ -42,10 +40,21 @@ h1
             color: white
             transform: rotate(-45deg)
 
+// ********************** HOME ****************************////I
+
+.home-drawer
+    border-radius: 15px 15px 0 0
+    box-shadow: 0 -2px 4px rgba(0,0,0,.2)
+
+.drawer
+    .col-4
+        background: #999
+        height: 5px
+        border-radius: 10px
 
 
 
-    //********************************* Bar *************************
+//********************************* Bar *************************
 
 .bar
     margin-bottom: 15px
@@ -71,9 +80,7 @@ h1
             color: $colorPrimario
         .nostar
             color: rgba($colorPrimario, 0.5)
-  
-  
-    
+      
 .hero-image
     height: 25vh
     display: flex
@@ -141,3 +148,34 @@ h1
             font-weight: bold
         .descipcion-plato
             font-size: 0.75rem
+
+
+// ******************  Reservas ******************* //
+
+.reservas
+    h4
+        color: $colorPrimario
+    .reserva
+        border-radius: 10px
+        overflow: hidden
+        box-shadow: 0 0px 6px rgba($colorPrimario,.2)
+        .date
+            background: rgba($colorPrimario, .2)
+            p
+                margin-bottom: 0
+                text-align: center
+                color: $colorPrimario
+            .dia
+                font-size: 1.5rem
+                font-weight: bold
+                line-height: .8
+            .mes
+                font-size: .85rem
+        .bares
+            .bar
+                font-weight: bold
+            .hora
+                color: rgba($TextoPrimario, .7)
+                font-size: .8rem
+            p
+                margin-bottom: 0
